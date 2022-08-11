@@ -10,7 +10,7 @@ class Categories extends React.Component {
   render() {
     return (
       <>
-      <Navigation />
+        <Navigation />
         <main className="container-category">
           <button type="button">Check Status</button>
         </main>
