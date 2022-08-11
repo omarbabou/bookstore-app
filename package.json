@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "stylelint": "^14.10.0",
     "stylelint-config-standard": "21.x",
     "stylelint-csstree-validator": "1.x",
     "stylelint-scss": "3.x",
