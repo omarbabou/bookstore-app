@@ -54,4 +54,46 @@ const bookReducer = (state = [], action) => {
   }
 };
 
+export const fetchBooks = () => async (dispatch) => {
+  await fetch(URL)
+    .then((res) => res.json())
+    .then((books) => {
+      const BooksList = [];
+      Object.keys(books).forEach((key) => {
+        BooksList.push({
+          item_id: key,
+          title: books[key][0].title,
+          author: books[key][0].author,
+          category: books[key][0].category,
+        });
+      });
+      dispatch(readBooks(BooksList));
+    });
+};
+
+export const postBook = (book) => async (dispatch) => {
+  await fetch(URL, {
+    method: 'POST',
+    body: JSON.stringify(book),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then(() => {
+      dispatch(addBook(book));
+    });
+};
+
+export const deleteBook = (id) => async (dispatch) => {
+  await fetch(`${URL}/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then(() => {
+      dispatch(removeBook(id));
+    });
+};
+
 export default bookReducer;
