@@ -136,3 +136,54 @@ h1 {
   gap: 5vw;
   width: 60%;
 }
+
+.bookProgress .book-remove-edit {
+  width: 0.1px;
+}
+
+.book-stats {
+  width: 48%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.book-circle {
+  width: 75px;
+  height: 75px;
+  border: 4px solid black;
+  border-radius: 50%;
+}
+
+.book-percent {
+  color: #191724;
+  font-size: 2rem;
+}
+
+.book-status {
+  display: block;
+}
+
+.book-chapter {
+  width: 48%;
+}
+
+.book-chapter button {
+  background-color: #0290ff;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  border: none;
+  padding: 5px 2px;
+  width: 140px;
+}
+
+.current-chapter {
+  font-size: 0.8rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.current-chapter-2 {
+  font-size: 0.9rem;
+  font-family: 'Roboto Slab', serif;
+  color: #191724;
+}
