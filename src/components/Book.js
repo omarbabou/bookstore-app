@@ -18,7 +18,7 @@ const Book = (props) => {
         <h4 className="book-category">Category</h4>
         <h3 className="book-title">{title}</h3>
         <h5 className="book-author">{author}</h5>
-        <div className="bookActions">
+        <div className="book-actions">
           <button type="button">Comments</button>
           <div className="book-remove-edit" />
           <button type="button" onClick={handleRemoveBook}>Remove</button>
@@ -26,7 +26,7 @@ const Book = (props) => {
           <button type="button">Edit</button>
         </div>
       </header>
-      <section className="bookProgress">
+      <section className="book-progress">
         <div className="book-stats">
           <div className="book-circle" />
           <div className="book-status">

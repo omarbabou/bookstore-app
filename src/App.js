@@ -18,7 +18,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Routes>
           <Route path="/" element={<Books BooksList={state.books} />} />
