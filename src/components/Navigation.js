@@ -8,9 +8,9 @@ const Navbar = () => (
       <Link to="/">Books</Link>
       <Link to="/Categories">Categories</Link>
     </nav>
-    <div className="user">
+    <button className="icon-button" type="button">
       <i className="fa-solid fa-user" />
-    </div>
+    </button>
   </header>
 );
 
