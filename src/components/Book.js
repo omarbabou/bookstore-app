@@ -14,11 +14,11 @@ const Book = (props) => {
 
   return (
     <article className="container-book">
-      <header className="book-haeder">
+      <header className="book-header">
+        <h4 className="book-category">Category</h4>
         <h3 className="book-title">{title}</h3>
-        <h4 className="book-category">category</h4>
         <h5 className="book-author">{author}</h5>
-        <div className="bookActions">
+        <div className="book-actions">
           <button type="button">Comments</button>
           <div className="book-remove-edit" />
           <button type="button" onClick={handleRemoveBook}>Remove</button>
@@ -26,16 +26,18 @@ const Book = (props) => {
           <button type="button">Edit</button>
         </div>
       </header>
-      <section className="bookProgress">
+      <section className="book-progress">
         <div className="book-stats">
           <div className="book-circle" />
-          <div className="book-percent" />
-          <div className="book-state" />
+          <div className="book-status">
+            <div className="book-percent">64%</div>
+            <div className="book-state">Completed</div>
+          </div>
         </div>
         <div className="book-remove-edit" />
         <div className="book-chapter">
           <p className="current-chapter">CURRENT CHAPTER</p>
-          <p className="current-chapter-2" />
+          <p className="current-chapter-2">CHAPTER 17</p>
           <button type="button">UPDATE PROGRESS</button>
         </div>
       </section>

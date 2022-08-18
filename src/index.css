@@ -1,27 +1,237 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    "Courier New",
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 4%;
+  background-color: #f5f6fa;
+  font-family: Montserrat, sans-serif;
+}
+
+.app {
+  width: 80vw;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 30px;
+}
+
+/* Navbar
+*************************** */
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  gap: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+nav a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #99afcd;
+  margin: 10px;
+}
+
+.icon-button {
+  cursor: pointer;
+  width: 2.813rem;
+  height: 2.813rem;
+  margin-left: 35vw;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+.fa-user {
+  color: #0290ff;
+}
+
+h1 {
+  color: #0290ff;
+  margin-right: 30px;
+  font-weight: 700;
+}
+
+/* Book styles
+*********************************/
+
+.books-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.books-list li {
+  display: block;
+  margin: 30px 0;
+}
+
+.container-book {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid #e8e8e8;
+  padding: 20px 30px;
+}
+
+.book-header {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  color: #191724;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.book-category {
+  margin-bottom: 6px;
+  color: #1212127a;
+}
+
+.book-author {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #4386bf;
+  font-size: 0.875rem;
+}
+
+.book-remove-edit {
+  width: 0.125px;
+  height: 4rem;
+  border: 1px solid #e8e8e8;
+}
+
+.container-book h4,
+.container-book h5,
+.container-book h3 {
+  margin: 2px;
+}
+
+.book-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 8px;
+}
+
+.book-actions button {
+  background-color: transparent;
+  font-family: "Roboto Slab", serif;
+  color: #4386bf;
+  font-weight: 300;
+  font-size: 0.875rem;
+  border: none;
+  height: 20px;
+  cursor: pointer;
+}
+
+.book-actions .book-remove-edit {
+  height: 1.2rem;
+}
+
+.book-progress {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  width: 60%;
+}
+
+.book-progress .book-remove-edit {
+  width: 0.1px;
+}
+
+.book-stats {
+  width: 48%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.book-circle {
+  width: 75px;
+  height: 75px;
+  border: 4px solid #307bbe;
+  border-left-color: #e8e8e8;
+  border-radius: 50%;
+}
+
+.book-percent {
+  color: #191724;
+  font-size: 2rem;
+}
+
+.book-status {
+  display: block;
+}
+
+.book-chapter {
+  width: 48%;
+}
+
+.book-chapter button {
+  background-color: #0290ff;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  padding: 5px 2px;
+  width: 140px;
+  cursor: pointer;
+}
+
+.current-chapter {
+  font-size: 0.8rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.current-chapter-2 {
+  font-size: 0.9rem;
+  font-family: "Roboto Slab", serif;
+  color: #191724;
+}
+
+/* Form
+**************************/
+
+.clm2-form-book h2 {
+  color: #1212127a;
+  font-size: 1.45rem;
+}
+
+.clm2-form-book input {
+  padding: 12px;
+  width: 20vw;
+  margin-right: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.clm2-form-book input::placeholder {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2rem;
+}
+
+.clm2-form-book button {
+  background-color: #0290ff;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 4px;
+  width: 100px;
+  cursor: pointer;
+}
+
+hr {
+  font-size: 2px;
+  background-color: #e8e8e8;
 }

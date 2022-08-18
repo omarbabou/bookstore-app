@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Categories from './components/Categories';
 import { fetchBooks } from './redux/books/books';
 import Books from './components/Books';
+import './index.css';
 
 const App = () => {
   const state = useSelector((state) => state);
@@ -17,7 +18,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Routes>
           <Route path="/" element={<Books BooksList={state.books} />} />

@@ -4,17 +4,22 @@
 
 # BOOKSTORE-APP
 
-A library web app to managae your small collection of books, made with HTML, CSS, JS, React.
+A library web app to managae your small collection of books, made with HTML, CSS, JS, React/Redux.
+
+## Screenshot 
+
+![screenshot](./bookstore.png)
 
 ## Built With
 
 - React
+- Redux
 - ES Modules
 - Linters
 
 ## See Project
 
-[Live demo]()
+[Bookstore App](https://idriss-omar-bookstore-app.netlify.app/)
 
 
 ## Getting Started
