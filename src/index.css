@@ -10,9 +10,8 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  color: #99afcd;
+  padding: 4%;
+  background-color: #f5f6fa;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -31,7 +30,7 @@ body {
   align-items: center;
   padding: 10px 25px;
   gap: 15px;
-  border-bottom: 1px solid #7b828b;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 nav a {
@@ -105,12 +104,14 @@ h1 {
 .book-author {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
+  color: #4386bf;
+  font-size: .875rem;
 }
 
 .book-remove-edit{
   width: 0.125px;
   height: 4rem;
-  border: 1px solid #c7dbe3;
+  border: 1px solid #e8e8e8;
 }
 
 .container-book h4,
@@ -126,11 +127,14 @@ h1 {
 }
 
 .bookActions button {
-  background-color: white;
+  background-color: transparent;
   font-family: 'Roboto Slab', serif;
-  color: #99afcd;
+  color: #4386bf;
+  font-weight: 300;
+  font-size: .875rem;
   border: none;
   height: 20px;
+  cursor: pointer;
 }
 
 .bookActions .book-remove-edit {
@@ -183,6 +187,7 @@ h1 {
   border: none;
   padding: 5px 2px;
   width: 140px;
+  cursor: pointer;
 }
 
 .current-chapter {
@@ -225,9 +230,10 @@ h1 {
   border-radius: 5px;
   padding: 12px 4px;
   width: 100px;
+  cursor: pointer;
 }
 
 hr {
   font-size: 2px;
-  color: #e8e8e8;
+  background-color: #e8e8e8;
 }
