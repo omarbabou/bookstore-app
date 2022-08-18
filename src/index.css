@@ -54,3 +54,43 @@ h1 {
   margin-right: 30px;
   font-weight: 700;
 }
+
+/* Book styles
+*********************************/
+
+.books-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.books-list li {
+  display: block;
+  margin: 30px 0;
+}
+
+.container-book {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid #e8e8e8;
+  padding: 20px 30px;
+}
+
+.book-header {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  color: #191724;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.book-category {
+  margin-bottom: 6px;
+  color: #1212127a;
+}
